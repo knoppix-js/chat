@@ -14,7 +14,7 @@
           :class="msg.from === USERNAME ? 'justify-end' : 'justify-start'"
         >
           <div
-            class="q-pa-sm rounded-borders"
+            class="q-pa-sm q-px-md rounded-borders"
             :class="msg.from === USERNAME ? 'bg-primary text-white' : 'bg-grey-4 text-black'"
             style="max-width: 75%; white-space: pre-wrap; overflow-wrap: break-word;"
           >
