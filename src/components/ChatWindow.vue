@@ -55,7 +55,7 @@ function scrollToBottom(force = false) {
 
   const distanceToBottom = el.scrollHeight - (el.scrollTop + el.clientHeight);
 
-  if (!force && distanceToBottom > 150) return;
+  if (!force && distanceToBottom > 150) return; // Если была прокуртка вверх по чату сообщений, то не тригерим скролл вниз
 
   el.scrollTop = el.scrollHeight;
 }

@@ -4,7 +4,6 @@
     <!-- Список контактов -->
     <ContactList
       v-model="drawer"
-      :activeContact="activeContact"
       @select="select"
     />
 

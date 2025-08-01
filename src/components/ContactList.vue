@@ -50,7 +50,6 @@ import { useChatStore } from 'src/stores/chatStore';
 
 const props = defineProps<{
   modelValue: boolean;
-  activeContact: string;
 }>();
 
 const emit = defineEmits<{
@@ -65,6 +64,7 @@ const drawer = computed({
 
 const store = useChatStore();
 const contactList = computed(() => store.contactList);
+const activeContact = computed(() => store.activeContact);
 
 function select(name: string) {
   emit('select', name);
